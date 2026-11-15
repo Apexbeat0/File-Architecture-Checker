@@ -36,7 +36,7 @@ pip install tkinterdnd2
 Run the application:
 
 ```bash
-python File_Architecture_Checker.py
+python file_architecture_checker_min.py
 ```
 
 Select a Windows executable file or drag and drop it into the application.
