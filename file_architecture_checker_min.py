@@ -56,7 +56,7 @@ class App:
   s.p,s.a,s.t,s.n,s.z,s.c=[tk.StringVar(value=x)for x in("No file selected","Architecture: Unknown","-","-","-","-")]
   ttk.Label(r,text="File Architecture Checker",font=("Arial",20,"bold")).pack(pady=(20,10))
   ttk.Button(r,text="Select File",width=22,command=s.sel).pack(pady=5,ipady=6)
-  ttk.Label(r,text="or drag & drop a file here"if D else"(drag & drop)",font=("Arial",9),foreground="gray").pack()
+  ttk.Label(r,text="or drag & drop a file here"if D else"(install tkinterdnd2 to enable drag & drop)",font=("Arial",9),foreground="gray").pack()
   ttk.Label(r,textvariable=s.p,font=("Arial",9),wraplength=520,justify="center").pack(pady=8)
   s.l=ttk.Label(r,textvariable=s.a,font=("Arial",16,"bold"),foreground="#1565c0",wraplength=520,justify="center");s.l.pack(pady=8)
   f=ttk.LabelFrame(r,text="Details");f.pack(padx=20,pady=5,fill="x")
